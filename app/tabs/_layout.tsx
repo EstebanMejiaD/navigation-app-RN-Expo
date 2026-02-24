@@ -4,7 +4,13 @@ import React from "react";
 
 const TabsLayout = () => {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: "green" }}>
+    <Tabs
+      screenOptions={{
+        tabBarActiveTintColor: "indigo",
+        // headerShown: false,
+        // tabBarStyle: { backgroundColor: "black" },
+      }}
+    >
       <Tabs.Screen
         name="home/index"
         options={{
@@ -20,6 +26,16 @@ const TabsLayout = () => {
           title: "Favoritos",
           tabBarIcon: ({ color }) => (
             <Ionicons size={28} name="star-outline" color={color} />
+          ),
+        }}
+      />
+
+      <Tabs.Screen
+        name="(stack)"
+        options={{
+          title: " Stack",
+          tabBarIcon: ({ color }) => (
+            <Ionicons size={28} name="person-add-outline" color={color} />
           ),
         }}
       />
