@@ -12,6 +12,16 @@ const TabsLayout = () => {
       }}
     >
       <Tabs.Screen
+        name="(stack)"
+        options={{
+          headerShown: false,
+          title: " Stack",
+          tabBarIcon: ({ color }) => (
+            <Ionicons size={28} name="person-add-outline" color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
         name="home/index"
         options={{
           title: " Inicio",
@@ -26,16 +36,6 @@ const TabsLayout = () => {
           title: "Favoritos",
           tabBarIcon: ({ color }) => (
             <Ionicons size={28} name="star-outline" color={color} />
-          ),
-        }}
-      />
-
-      <Tabs.Screen
-        name="(stack)"
-        options={{
-          title: " Stack",
-          tabBarIcon: ({ color }) => (
-            <Ionicons size={28} name="person-add-outline" color={color} />
           ),
         }}
       />

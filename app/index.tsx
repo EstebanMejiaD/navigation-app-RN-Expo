@@ -3,7 +3,7 @@ import React from "react";
 
 const App = () => {
   // return <Redirect href="/(stack)/home" />;
-  return <Redirect href="/drawer/user" />;
+  return <Redirect href="/home" />;
 };
 
 export default App;
